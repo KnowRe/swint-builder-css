@@ -1,6 +1,6 @@
 {
   "name": "swint-builder-css",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "CSS builder for Swint",
   "main": "lib/index.js",
   "scripts": {
@@ -12,8 +12,8 @@
   },
   "keywords": [
     "swint",
-    "task",
-    "batch"
+    "builder",
+    "css"
   ],
   "author": "Kurt Cho <kivoloid@gmail.com>",
   "contributors": [],

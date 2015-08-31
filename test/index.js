@@ -34,20 +34,20 @@ describe('builder-css', function() {
 		buildCSS({
 			name: 'Test',
 			inDir: path.join(__dirname, '../test_case/css'),
-			outDir: os.tmpdir(),
+			outDir: path.join(os.tmpdir(), 'swint-builder-css-out'),
 			imgMetaDir: path.join(__dirname, '../test_case/imgMeta'),
 			minify: true,
 			variables: {
 				tmplVar: 'A'
 			}
 		}, function(err, res) {
-			assert.equal(
-				fs.readFileSync(path.join(os.tmpdir(), 'Test.css'), { encoding: 'utf8' }),
+			assert.deepEqual(
+				fs.readFileSync(path.join(os.tmpdir(), 'swint-builder-css-out/Test.css')),
 				fs.readFileSync(path.join(__dirname, '../test_result/common.css'))
 			);
 
-			assert.equal(
-				fs.readFileSync(path.join(os.tmpdir(), 'Test.min.css'), { encoding: 'utf8' }),
+			assert.deepEqual(
+				fs.readFileSync(path.join(os.tmpdir(), 'swint-builder-css-out/Test.min.css')),
 				fs.readFileSync(path.join(__dirname, '../test_result/common.min.css'))
 			);
 			done();
@@ -55,7 +55,7 @@ describe('builder-css', function() {
 	});
 
 	after(function() {
-		fs.unlinkSync(path.join(os.tmpdir(), 'Test.css'));
-		fs.unlinkSync(path.join(os.tmpdir(), 'Test.min.css'));
+		fs.unlinkSync(path.join(os.tmpdir(), 'swint-builder-css-out/Test.css'));
+		fs.unlinkSync(path.join(os.tmpdir(), 'swint-builder-css-out/Test.min.css'));
 	});
 });
