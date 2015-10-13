@@ -59,5 +59,6 @@ describe('builder-css', function() {
 	after(function() {
 		fs.unlinkSync(path.join(os.tmpdir(), 'swint-builder-css-out/Test.css'));
 		fs.unlinkSync(path.join(os.tmpdir(), 'swint-builder-css-out/Test.min.css'));
+		fs.rmdirSync(path.join(os.tmpdir(), 'swint-builder-css-out'));
 	});
 });
