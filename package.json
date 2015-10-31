@@ -29,6 +29,7 @@
     "swint-helper": "^0.1.4"
   },
   "devDependencies": {
+    "eslint": "*",
     "mocha": "*"
   }
 }
