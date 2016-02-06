@@ -1,3 +1,6 @@
+2016.02.06, Version 2.0.1
+ * Fix: Fixed the way to apply SVG
+
 2016.02.06, Version 2.0.0
  * Breaking: Changed API to support inline SVG
 
