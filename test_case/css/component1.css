@@ -3,5 +3,5 @@
 }
 
 .component1 .svg {
-	<%- svg.dir.Canada %>
+	background-image: url('<%- svg.dir.Canada %>');
 }
