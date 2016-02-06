@@ -23,9 +23,12 @@ describe('builder-css', function() {
 		});
 	});
 
-	it('Error when imgMetaDir doesn\'t exist', function(done) {
+	it('Error when png.metaDir doesn\'t exist', function(done) {
 		buildCSS({
-			imgMetaDir: '/this-directory-does-not-exist'
+			png: {
+				enable: true,
+				metaDir: '/this-directory-does-not-exist'
+			}
 		}, function(err, res) {
 			assert.notEqual(err, null);
 			done();
@@ -37,7 +40,14 @@ describe('builder-css', function() {
 			name: 'Test',
 			inDir: path.join(__dirname, '../test_case/css'),
 			outDir: path.join(os.tmpdir(), 'swint-builder-css-out'),
-			imgMetaDir: path.join(__dirname, '../test_case/imgMeta'),
+			png: {
+				enable: true,
+				metaDir: path.join(__dirname, '../test_case/pngMeta')
+			},
+			svg: {
+				enable: true,
+				dir: path.join(__dirname, '../test_case/svg')
+			},
 			minify: true,
 			variables: {
 				tmplVar: 'A'
@@ -45,12 +55,12 @@ describe('builder-css', function() {
 		}, function(err, res) {
 			assert.deepEqual(
 				fs.readFileSync(path.join(os.tmpdir(), 'swint-builder-css-out/Test.css')),
-				fs.readFileSync(path.join(__dirname, '../test_result/common.css'))
+				fs.readFileSync(path.join(__dirname, '../test_result/Test.css'))
 			);
 
 			assert.deepEqual(
 				fs.readFileSync(path.join(os.tmpdir(), 'swint-builder-css-out/Test.min.css')),
-				fs.readFileSync(path.join(__dirname, '../test_result/common.min.css'))
+				fs.readFileSync(path.join(__dirname, '../test_result/Test.min.css'))
 			);
 			done();
 		});

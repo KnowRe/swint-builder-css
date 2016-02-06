@@ -1,3 +1,7 @@
 .component1 {
-	<%- img.component1.foo %>
+	<%- png.component1.foo %>
+}
+
+.component1 .svg {
+	<%- svg.dir.Canada %>
 }

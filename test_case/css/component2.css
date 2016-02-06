@@ -1,13 +1,13 @@
 <% if(tmplVar === 'A') { %>
 
 .component2 {
-	<%- img.component2.bar %>
+	<%- png.component2.bar %>
 }
 
 <% } else { %>
 
 .component2 {
-	<%- img.component2.baz %>
+	<%- png.component2.baz %>
 }
 
 <% } %>
