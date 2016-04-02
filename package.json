@@ -26,13 +26,13 @@
   },
   "homepage": "https://github.com/KnowRe-Dev/swint-builder-css",
   "dependencies": {
-    "clean-css": "^3.4.9",
+    "clean-css": "^3.4.11",
     "ejs": "^2.4.1",
     "sprintf": "^0.1.5",
-    "swint-helper": "^1.0.1"
+    "swint-helper": "^1.1.1"
   },
   "devDependencies": {
     "mocha": "^2.4.5",
-    "eslint": "^2.2.0"
+    "eslint": "^2.6.0"
   }
 }
