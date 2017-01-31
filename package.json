@@ -27,7 +27,7 @@
   "homepage": "https://github.com/KnowRe-Dev/swint-builder-css",
   "dependencies": {
     "clean-css": "^4.0.3",
-    "ejs": "^2.4.2",
+    "ejs": "^2.5.5",
     "sprintf": "^0.1.5",
     "swint-helper": "1.x"
   },
