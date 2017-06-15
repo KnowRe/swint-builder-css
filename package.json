@@ -1,6 +1,6 @@
 {
   "name": "swint-builder-css",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "description": "CSS builder for Swint",
   "main": "lib/index.js",
   "scripts": {
