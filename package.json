@@ -29,10 +29,10 @@
     "clean-css": "4.1.4",
     "ejs": "2.5.6",
     "sprintf": "0.1.5",
-    "swint-helper": "1.2.4"
+    "swint-helper": "1.2.5"
   },
   "devDependencies": {
     "mocha": "3.4.2",
-    "eslint": "3.19.0"
+    "eslint": "4.0.0"
   }
 }
