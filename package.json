@@ -29,7 +29,7 @@
     "clean-css": "4.1.8",
     "ejs": "2.5.7",
     "sprintf": "0.1.5",
-    "swint-helper": "1.2.7"
+    "swint-helper": "1.2.8"
   },
   "devDependencies": {
     "eslint": "4.7.0",
